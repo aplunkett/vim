@@ -1,0 +1,25 @@
+" Pathogen
+execute pathogen#infect()
+
+" Basic settings
+syntax on
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set number
+set encoding=utf-8
+
+" Theme
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+
+colorscheme solarized
+
+" Mappings
+inoremap jk <ESC>
+let mapleader = "\<Space>"
